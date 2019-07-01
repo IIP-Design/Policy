@@ -1,0 +1,69 @@
+{
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress",
+        "type": "webroot",
+        "version": "5.2.2",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/5.2.2.zip"
+        },
+        "require": {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com/IIP-Design/corona-theme.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:humanmade/S3-Uploads.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com/IIP-Design/scrollmagic.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:IIP-Design/wp-elasticsearch-feeder.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:IIP-Design/iip-gutenblocks.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:IIP-Design/wp-hide-login-form.git"
+    }
+  ],
+  "require": {
+    "wordpress": "5.2.2",
+    "fancyguy/webroot-installer": "1.1.0",
+    "humanmade/s3-uploads": "dev-master",
+    "iip-design/corona": "v2.12.2",
+    "iip-design/iip-gutenblocks": "v1.1.2",
+    "iip-design/scrollmagic": "v3.6.6",
+    "iip-design/wp-elasticsearch-feeder": "2.5.0",
+    "iip-design/wp-hide-login-form": "1.0.1",
+    "wpackagist-plugin/google-apps-login": "3.2",
+    "wpackagist-plugin/wordpress-mu-domain-mapping": "0.5.5.1",
+    "wpackagist-plugin/wp-ses": "1.1"
+  },
+  "extra": {
+    "dropin-paths": {
+      "wp-content/": [
+        "package:wpackagist-plugin/wordpress-mu-domain-mapping:sunrise.php"
+      ]
+    },
+    "webroot-dir": "wp",
+    "webroot-package": "wordpress"
+  }
+}

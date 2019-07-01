@@ -1,0 +1,9 @@
+# Wordpress
+wp/
+wp-content/plugins
+wp-content/themes
+wp-content/uploads
+
+# Composer
+vendor
+composer.lock
