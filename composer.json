@@ -5,10 +5,10 @@
       "package": {
         "name": "wordpress",
         "type": "webroot",
-        "version": "5.2.2",
+        "version": "5.2.3",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/WordPress/WordPress/archive/5.2.2.zip"
+          "url": "https://github.com/WordPress/WordPress/archive/5.2.3.zip"
         },
         "require": {
           "fancyguy/webroot-installer": "1.1.0"
@@ -49,7 +49,7 @@
     }
   ],
   "require": {
-    "wordpress": "5.2.2",
+    "wordpress": "5.2.3",
     "fancyguy/webroot-installer": "1.1.0",
     "humanmade/s3-uploads": "dev-master",
     "iip-design/corona": "v2.12.2",
