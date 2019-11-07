@@ -23,16 +23,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define('DB_NAME', getenv('STORIES_DB_NAME'));
+define('DB_NAME', getenv('POLICY_DB_NAME'));
 
 /** MySQL database username */
-define('DB_USER', getenv('STORIES_DB_USER'));
+define('DB_USER', getenv('POLICY_DB_USER'));
 
 /** MySQL database password */
-define('DB_PASSWORD', getenv('STORIES_DB_PASSWORD'));
+define('DB_PASSWORD', getenv('POLICY_DB_PASSWORD'));
 
 /** MySQL hostname */
-define('DB_HOST', getenv('STORIES_DB_HOST'));
+define('DB_HOST', getenv('POLICY_DB_HOST'));
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -49,30 +49,30 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         getenv('STORIES_AUTH_KEY'));
-define('SECURE_AUTH_KEY',  getenv('STORIES_SECURITY_AUTH_KEY'));
-define('LOGGED_IN_KEY',    getenv('STORIES_LOGGED_IN_KEY'));
-define('NONCE_KEY',        getenv('STORIES_NONCE_KEY'));
-define('AUTH_SALT',        getenv('STORIES_AUTH_SALT'));
-define('SECURE_AUTH_SALT', getenv('STORIES_SECURE_AUTH_SALT'));
-define('LOGGED_IN_SALT',   getenv('STORIES_LOGGED_IN_SALT'));
-define('NONCE_SALT',       getenv('STORIES_NONCE_SALT'));
+define('AUTH_KEY',         getenv('POLICY_AUTH_KEY'));
+define('SECURE_AUTH_KEY',  getenv('POLICY_SECURITY_AUTH_KEY'));
+define('LOGGED_IN_KEY',    getenv('POLICY_LOGGED_IN_KEY'));
+define('NONCE_KEY',        getenv('POLICY_NONCE_KEY'));
+define('AUTH_SALT',        getenv('POLICY_AUTH_SALT'));
+define('SECURE_AUTH_SALT', getenv('POLICY_SECURE_AUTH_SALT'));
+define('LOGGED_IN_SALT',   getenv('POLICY_LOGGED_IN_SALT'));
+define('NONCE_SALT',       getenv('POLICY_NONCE_SALT'));
 
 /** AWS S3 Uploads directory **/
-if ( isset( $_SERVER['STORIES_S3_UPLOADS_BUCKET'] ) ) {
-  define('S3_UPLOADS_BUCKET', getenv('STORIES_S3_UPLOADS_BUCKET'));
+if ( isset( $_SERVER['POLICY_S3_UPLOADS_BUCKET'] ) ) {
+  define('S3_UPLOADS_BUCKET', getenv('POLICY_S3_UPLOADS_BUCKET'));
 }
-if ( isset( $_SERVER['STORIES_S3_UPLOADS_BUCKET_URL'] ) ) {
-  define('S3_UPLOADS_BUCKET_URL', getenv('STORIES_S3_UPLOADS_BUCKET_URL'));
+if ( isset( $_SERVER['POLICY_S3_UPLOADS_BUCKET_URL'] ) ) {
+  define('S3_UPLOADS_BUCKET_URL', getenv('POLICY_S3_UPLOADS_BUCKET_URL'));
 }
-if ( isset( $_SERVER['STORIES_S3_UPLOADS_KEY'] ) ) {
-  define('S3_UPLOADS_KEY', getenv('STORIES_S3_UPLOADS_KEY'));
+if ( isset( $_SERVER['POLICY_S3_UPLOADS_KEY'] ) ) {
+  define('S3_UPLOADS_KEY', getenv('POLICY_S3_UPLOADS_KEY'));
 }
-if ( isset( $_SERVER['STORIES_S3_UPLOADS_SECRET'] ) ) {
-  define('S3_UPLOADS_SECRET', getenv('STORIES_S3_UPLOADS_SECRET'));
+if ( isset( $_SERVER['POLICY_S3_UPLOADS_SECRET'] ) ) {
+  define('S3_UPLOADS_SECRET', getenv('POLICY_S3_UPLOADS_SECRET'));
 }
-if ( isset( $_SERVER['STORIES_S3_UPLOADS_REGION'] ) ) {
-  define('S3_UPLOADS_REGION', getenv('STORIES_S3_UPLOADS_REGION'));
+if ( isset( $_SERVER['POLICY_S3_UPLOADS_REGION'] ) ) {
+  define('S3_UPLOADS_REGION', getenv('POLICY_S3_UPLOADS_REGION'));
 }
 
 /**#@-*/
@@ -121,7 +121,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) and $_SERVER['HTTP_X_FORWARDED_PRO
 define( 'WP_ALLOW_MULTISITE', true);
 define( 'MULTISITE', true);
 define( 'SUBDOMAIN_INSTALL', true);
-define( 'DOMAIN_CURRENT_SITE', getenv('STORIES_DOMAIN_CURRENT_SITE' ));
+define( 'DOMAIN_CURRENT_SITE', getenv('POLICY_DOMAIN_CURRENT_SITE' ));
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
