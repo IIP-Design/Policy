@@ -1,6 +1,7 @@
 # Wordpress
 wp/
-wp-content/
+wp-content/**/*
+!wp-content/sunrise.php
 
 # Composer
 vendor
